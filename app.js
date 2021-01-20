@@ -8,6 +8,7 @@ var usersRouter = require("./routes/users");
 var loginRouter = require("./routes/login");
 var friendsRouter = require("./routes/friends");
 var photosRouter = require("./routes/photos");
+var postsRouter = require("./routes/posts");
 // const pool = require("./database");
 // const initDb = require("./routes/database").initDb;
 // const getDb = require("./routes/database").getDb;
@@ -29,6 +30,7 @@ app.use("/users", usersRouter);
 app.use("/login", loginRouter);
 app.use("/friends", friendsRouter);
 app.use("/photos", photosRouter);
+app.use("/posts", postsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
